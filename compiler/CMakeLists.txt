@@ -6,6 +6,7 @@ set (CMAKE_MODULE_PATH
 include (CMakeParseArguments)
 include (Folders)
 
+cmake_policy(SET CMP0074 OLD)
 find_package (Stack)
 
 function (add_stack_build target)

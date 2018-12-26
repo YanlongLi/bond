@@ -1,5 +1,7 @@
 include (Compiler)
 
+cmake_policy(SET CMP0074 OLD)
+
 set (BOND_GBC_PATH_DESCRIPTION
      "Optional path to the gbc executable to use. If set, this gbc will be used when generating code from .bond files. If not set, then gbc will be built (and the Haskell toolchain will need to be present on the machine) and the gbc tests will be run.")
 
